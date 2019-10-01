@@ -5,7 +5,7 @@
   <modelVersion>4.0.0</modelVersion>
 
   <groupId>com.thinknyx.app</groupId>
-  <artifactId>vodafone</artifactId>
+  <artifactId>SA_vodafone</artifactId>
   <version>1.0-SNAPSHOT</version>
   <packaging>war</packaging>
 
@@ -27,6 +27,17 @@
       <scope>test</scope>
     </dependency>
   </dependencies>
+
+<distributionManagement>
+<repository>
+<id>nexus</id>
+<url>http://15.206.48.100:8081/repository/maven-releases/</url>
+</repository>
+<snapshotRepository>
+ <id>nexus</id>
+                <url>http://15.206.48.100:8081/repository/maven-snapshots/</url>
+</snapshotRepository>
+</distributionManagement>
 
   <build>
     <finalName>vodafone</finalName>
